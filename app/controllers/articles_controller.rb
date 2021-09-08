@@ -47,6 +47,6 @@ class ArticlesController < ApplicationController
     def article_params
       #says that the params hash must have an :article key and that it is allowed to have
       # and only have a :title and :body value
-      params.require(:article).permit(:title, :body)
+      params.require(:article).permit(:title, :body, :status)
     end
 end
